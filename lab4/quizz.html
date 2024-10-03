@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roma</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <main>
+        <h1>Roma</h1>
+        <a href="index.html" >Home</a>
+        <a href="local.html" >Localização</a>
+        <a href="multimedia.html" >Multimédia</a>
+        <a href="info.html" >Informação</a>
+        <a href="quizz.html" >Quizz</a>
+        <a href="viagem.html" >Viagem</a>
+        <h2>Quizz</h2>
+
+        <form method="get" action="https://postman-echo.com/get">
+<fieldset>
+
+    <label for="fname">Nome:</label>
+    <input type="text" id="fname" name="fname" autocomplete="on" autofocus="on" required><br><br>
+
+    <label for="lname">Apelido:</label>
+    <input type="text" id="lname" name="lname" autocomplete="on" required><br><br>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="email@exemplo.pt" autocomplete="on" required><br><br>
+
+</fieldset>
+
+<fieldset>
+    <label for="rio">Qual é o rio que atravessa Roma?</label><br>
+    <input type="text" id="rio" name="rio" size ="20" maxlength ="30"><br><br>
+
+    <label for="comidas">Quais destas comidas típicas de Roma você acha que são preparadas tradicionalmente com queijo pecorino?</label> <br>
+    <input type="checkbox" id="carbonara" name="comidas" value="Carbonara">
+    <label for="carbonara">Carbonara</label><br>
+    <input type="checkbox" id="cacio_pepe" name="comidas" value="Cacio e Pepe">
+    <label for="cacio_pepe">Cacio e Pepe</label><br>
+    <input type="checkbox" id="lasanha" name="comidas" value="Lasanha">
+    <label for="lasanha">Lasanha</label><br>
+    <input type="checkbox" id="amatriciana" name="comidas" value="Amatriciana">
+    <label for="amatriciana">Amatriciana</label><br>
+    <br>
+
+    <label>Se você pudesse viajar no tempo para viver em uma das seguintes épocas de Roma, qual escolheria?</label><br>
+    <input type="radio" id="imperial" name="epoca" value="Roma Imperial">
+    <label for="imperial">Roma Imperial (27 a.C. – 476 d.C.)</label><br>
+    <input type="radio" id="republicana" name="epoca" value="Roma Republicana">
+    <label for="republicana">Roma Republicana (509 a.C. – 27 a.C.)</label><br>
+    <input type="radio" id="renascimento" name="epoca" value="Renascimento Romano">
+    <label for="renascimento">Renascimento Romano (século XV – XVI)</label><br>
+    <input type="radio" id="moderna" name="epoca" value="Roma Moderna">
+    <label for="moderna">Roma Moderna (século XIX – presente)</label>
+    <br>
+    <br>
+<label>Em Roma, a Noite de São Silvestre é celebrada na véspera do Ano Novo, 31 de dezembro, com festas, fogos de artifício e uma atmosfera vibrante. Muitas pessoas aproveitam a ocasião para visitar a cidade e celebrar a chegada do novo ano. Além disso, você também pode escolher visitar durante outras datas importantes, como o Dia da Independência da Itália (2 de junho) ou o Dia dos Santos (1 de novembro). Em que data preferia visitar Roma?</label>
+<br> <input type="date" id="data_visita" name="data_visita">
+<br>
+<br>
+<label>A que horas você gostaria de saborear um café em uma das cafeterias tradicionais de Roma?</label> <br>
+<input type="time" id="cafe" name="cafe">
+<br>
+<br>
+<label>Qual cor você escolheria para simbolizar sua visita a Roma?</label><br>
+<input type="color" value="color">
+<br>
+<br>
+<label>Quantos dias gostaria de passar em Roma?</label><br>
+<input type="number" value="numero">
+<br>
+<label>Em uma escala de 1 a 10, quão animado você está para visitar Roma?</label><br>
+<p id="rangeValue">5</p>
+<input type="range" id="nivel_animacao" name="nivel_animacao" min="1" max="10" step="1" value="5" required oninput="rangeValue.innerText = this.value">
+<br>
+<br>
+<label>Escolha uma imagem que represente sua visão de Roma!</label>
+<input type="image" src="roma.jpg" alt="Imagem de Roma">
+<br>
+<br>
+<br>
+<input type="submit">
+</form>
+</fieldset>
+    </main>
+
+</body>
+</html>
