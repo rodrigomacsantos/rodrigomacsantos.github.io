@@ -1,71 +1,3 @@
-
-
-
-h2 {
-    padding: 5px;
-    margin-top: 0; 
-}
-p {
-    padding: 5px;
-}
-
-
-
-a{
-    color: whitesmoke;
-}
-
-a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-section image {
-    width: 100%;
-    height: auto;
-    margin: 20 0;
-}
-
-#fotografias h3, #video h3, #poema h3 {
-    color: rgb(250, 250, 100);
-    font-size: 25;
-    border-bottom: 500 solid rgb(250, 250, 100);
-    padding-bottom: 100;
-    margin-bottom: 200;
-}
-
-label {
-    font-size: small;
-}
-
-input {
-    font-size: medium;
-}
-
-label, input {
-    display: block;
-    margin-bottom: 10;
-}
-
-footer {
-    color: white;
-    background-color:  #272727;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100vw;
-
-}
-
-main{
-    padding: 20px 40px;
-    background-color: whitesmoke;
-    margin: 5px;
-    border-radius: 10px;
-    max-width: 1200px; 
-}
-
-
 body {
     background-color: whitesmoke;
     font-family: Arial, sans-serif;
@@ -74,26 +6,43 @@ body {
 }
 
 header {
+    position: relative;
+    text-align: center;
+}
+
+.flag-container {
     display: flex;
-    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.flag-green, .flag-white, .flag-red {
+    flex: 1;
+    height: 100%;
 }
 
 .flag-green {
-    background-color: #009246;
-    height: 10px;
+    background-color: #009246; /* Italian flag green */
 }
 
-h1 {
+.flag-white {
     background-color: white;
-    text-align: center;
-    color: #000000; 
-    margin: 0;
-    padding: 15px;
 }
 
 .flag-red {
-    background-color: #CE2B37;
-    height: 10px;
+    background-color: #CE2B37; /* Italian flag red */
+}
+
+h1 {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+    display: inline-block;
+    margin: 0;
+    padding: 15px 30px;
+    color: #000000;
 }
 
 nav {
@@ -113,4 +62,66 @@ nav a {
 nav a:hover {
     background-color: #ddd;
     color: black;
+}
+
+main {
+    padding: 20px 40px;
+    background-color: whitesmoke;
+    margin: 5px;
+    border-radius: 10px;
+    max-width: 1200px; 
+}
+
+h2 {
+    padding: 5px;
+    margin-top: 0; 
+}
+
+p {
+    padding: 5px;
+}
+
+a {
+    color: whitesmoke;
+}
+
+a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+section image {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+#fotografias h3, #video h3, #poema h3 {
+    color: rgb(250, 250, 100);
+    font-size: 25px;
+    border-bottom: 500px solid rgb(250, 250, 100);
+    padding-bottom: 100px;
+    margin-bottom: 200px;
+}
+
+label {
+    font-size: small;
+}
+
+input {
+    font-size: medium;
+}
+
+label, input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+footer {
+    color: white;
+    background-color: #272727;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
 }
