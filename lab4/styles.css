@@ -25,7 +25,7 @@ header {
 }
 
 .flag-green {
-    background-color: #009246; /* Italian flag green */
+    background-color: #009246; 
 }
 
 .flag-white {
@@ -33,12 +33,12 @@ header {
 }
 
 .flag-red {
-    background-color: #CE2B37; /* Italian flag red */
+    background-color: #CE2B37; 
 }
 
 h1 {
     position: relative;
-    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+    background-color: rgba(255, 255, 255, 0.7); 
     display: inline-block;
     margin: 0;
     padding: 15px 30px;
