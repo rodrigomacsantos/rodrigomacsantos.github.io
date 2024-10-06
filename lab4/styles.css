@@ -1,11 +1,12 @@
 
 
-h2{
-    padding: 5;
-}
 
+h2 {
+    padding: 5px;
+    margin-top: 0; 
+}
 p {
-    padding: 5;
+    padding: 5px;
 }
 
 
@@ -57,21 +58,13 @@ footer {
 }
 
 main{
-    padding: 20;
+    padding: 20px 40px;
     background-color: whitesmoke;
-    margin: 5;
-    border-radius: 10 ;
+    margin: 5px;
+    border-radius: 10px;
+    max-width: 1200px; 
 }
 
-.green-header {
-    background-color: green;
-    height: 200px; /* Adjust this value to control how far down the green extends */
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
 
 body {
     background-color: whitesmoke;
@@ -86,25 +79,25 @@ header {
 }
 
 .flag-green {
-    background-color: #009246; /* Italian flag green */
+    background-color: #009246;
     height: 10px;
 }
 
 h1 {
     background-color: white;
     text-align: center;
-    color: #000000; /* Changed to black for better visibility */
+    color: #000000; 
     margin: 0;
     padding: 15px;
 }
 
 .flag-red {
-    background-color: #CE2B37; /* Italian flag red */
+    background-color: #CE2B37;
     height: 10px;
 }
 
 nav {
-    background-color: #f0f0f0; /* Light gray background for nav */
+    background-color: #f0f0f0;
     color: black;
     text-align: center;
     padding: 5px;
