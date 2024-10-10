@@ -7,16 +7,27 @@
     <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-    <main>
+    <header>
+        <div class="flag-container">
+            <div class="flag-green"></div>
+            <div class="flag-white"></div>
+            <div class="flag-red"></div>
+        </div>
         <h1>Roma</h1>
+    </header>
+    <nav height="50">
         <a href="index.html" >Home</a>
-        <a href="local.html" >Localização</a>
-        <a href="multimedia.html" >Multimédia</a>
-        <a href="info.html" >Informação</a>
-        <a href="quizz.html" >Quizz</a>
-        <a href="viagem.html" >Viagem</a>
+    <a href="local.html" >Localização</a>
+    <a href="multimedia.html" >Multimédia</a>
+    <a href="info.html" >Informação</a>
+    <a href="quizz.html" >Quizz</a>
+    <a href="viagem.html" >Viagem</a>
+    <a href="pontosinteresse.html" >Pontos de Interesse</a>
+  </nav>
+    <main>
+        
         <h2>Viagem</h2>
-    </main>
+    
     <fieldset>
         <form method="get" action="https://postman-echo.com/get"> 
 
@@ -58,8 +69,7 @@
             <label for="basico">Básico</label><br>
             <input type="radio" id="premium" name="servico" value="premium" >
             <label for="premium">Premium</label><br><br>
-    
-          
+
             <label for="pedidos_especiais">Pedidos especiais:</label><br>
             <textarea id="pedidos_especiais" name="pedidos_especiais" rows="4" cols="50"></textarea><br><br>
     
@@ -68,9 +78,14 @@
             <input type="number" id="valor_gasto" name="valor_gasto" min="0" step="0.01" ><br><br>
 
             <input type="submit">
+            
         </form>
+        
     </fieldset>
-
+</main>
+    <br>
+    <br>
+    <br>
     <footer>
         <p>DIW 2024</p>
     </footer>

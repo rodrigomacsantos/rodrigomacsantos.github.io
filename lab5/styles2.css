@@ -1,0 +1,20 @@
+h1 {
+    text-align: center;
+    background-color: green;
+    margin: 0;
+}
+
+body {
+    background-color: whitesmoke;
+}
+nav {
+    
+    color: whitesmoke;
+    background-color: rgb(255, 0, 0);
+}
+a{
+    color: black;
+}
+footer {
+    background-color: green;
+}

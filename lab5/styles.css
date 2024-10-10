@@ -1,0 +1,151 @@
+body {
+    background-color: whitesmoke;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: relative;
+    text-align: center;
+}
+
+.flag-container {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.flag-green, .flag-white, .flag-red {
+    flex: 1;
+    height: 100%;
+}
+
+.flag-green {
+    background-color: #009246; 
+}
+
+.flag-white {
+    background-color: white;
+}
+
+.flag-red {
+    background-color: #CE2B37; 
+}
+
+h1 {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.7); 
+    display: inline-block;
+    margin: 0;
+    padding: 15px 30px;
+    color: #000000;
+}
+
+nav {
+    background-color: #f0f0f0;
+    color: black;
+    text-align: center;
+    padding: 5px;
+    font-size: 15px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+main {
+    padding: 20px 40px;
+    background-color: whitesmoke;
+    margin: 5px;
+    border-radius: 10px;
+    max-width: 1200px; 
+}
+
+h2 {
+    padding: 5px;
+    margin-top: 0; 
+}
+
+p {
+    padding: 5px;
+}
+
+a {
+    color: black;
+}
+
+section image {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.section h3 {
+    color: black;
+    font-size: 24px;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: small;
+}
+
+input {
+    font-size: medium;
+}
+
+label, input {
+    display: block;
+    margin-bottom: 10px;
+}
+
+footer {
+    color: white;
+    background-color: #272727;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+}
+
+.section-links {
+    margin-bottom: 20px;
+}
+
+.section-links a {
+    color: black;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+body.pontosinteresse-pagina ul{
+    li:nth-child(odd){
+    color:#009246
+}}
+
+
+body.pontosinteresse-pagina ul{
+    li:nth-child(even){
+    color:#CE2B37
+}
+}
+body.pontosinteresse-pagina ul{
+    list-style-type: square
+}
+
+body.pontosinteresse-pagina ol{
+    list-style-type: upper-roman
+}
