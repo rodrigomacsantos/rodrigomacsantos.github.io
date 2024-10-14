@@ -149,3 +149,36 @@ body.pontosinteresse-pagina ul{
 body.pontosinteresse-pagina ol{
     list-style-type: upper-roman
 }
+
+.pontosinteresse-pagina tr:nth-child(even) {
+    background-color: #ffffff;
+    color: black;
+}
+
+.pontosinteresse-pagina th:nth-child(odd){
+    background-color: #009246;
+    color: white;
+}
+
+.pontosinteresse-pagina th:nth-child(even){
+    background-color: #CE2B37;
+    color: white;
+}
+
+.pontosinteresse-pagina tr:nth-child(odd) td:nth-child(odd) {
+    background-color: #009246;
+    color: white;
+}
+
+.pontosinteresse-pagina tr:nth-child(odd) td:nth-child(even) {
+    background-color: #CE2B37; 
+    color: white;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+li {
+    font-size: 200%;
+}
