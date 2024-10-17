@@ -1,0 +1,17 @@
+* {
+    margin:0;  
+    padding:0;  
+    box-sizing: border-box; /* medidas sao tomadas da borda */
+
+    background-color: burlywood;
+    color: black;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav.capitais {
+    padding: 20px;
+    text-decoration: none;
+}
