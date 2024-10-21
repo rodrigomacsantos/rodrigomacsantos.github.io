@@ -148,4 +148,6 @@ div {
     }
 }
 
-* {font-family: 'Syne Mono', monospace;}
+* {
+    font-family: 'Courier', monospace;
+}

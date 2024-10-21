@@ -188,3 +188,7 @@ li {
     height: auto;
     display: block;
   }
+
+  * {
+    font-family: 'Courier', monospace;
+}
