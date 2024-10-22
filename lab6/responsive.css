@@ -1,0 +1,38 @@
+
+
+@media screen and (max-width: 900px) {
+
+
+nav {
+    position: relative;
+    display: inline-block;
+  }
+  
+  nav a {display: inline-block;}
+  
+  .dropdown {
+    background-color: green;
+    color: white;
+    padding: 16px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  nav:hover .dropdown-content {display: block;}
+  
+  nav:hover .dropdown {background-color: #3e8e41;}
+  
+}
