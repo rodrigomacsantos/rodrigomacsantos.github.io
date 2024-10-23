@@ -151,3 +151,71 @@ div {
 * {
     font-family: 'Courier', monospace;
 }
+
+#gallery {
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    gap: 20px; /* Espaçamento entre os itens */
+    justify-items: center;
+}
+
+.gallery-item {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Estilo com efeito zoom ao passar o mouse */
+.gallery-item.zoom img:hover {
+    transform: scale(1.1);
+}
+
+/* Estilo com rotação */
+.gallery-item.rotate img {
+    transform: rotate(5deg);
+}
+
+/* Transição suave para a rotação */
+.gallery-item.rotate img:hover {
+    transform: rotate(0);
+}
+
+/* Responsivo: No caso de telas menores, ajusta para 2 colunas */
+@media (max-width: 800px) {
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas menores */
+    }
+}
+
+/* Responsivo: Para telas muito pequenas, ajusta para 1 coluna */
+@media (max-width: 500px) {
+    .gallery-container {
+        grid-template-columns: 1fr; /* 1 coluna em telas muito pequenas */
+    }
+}
