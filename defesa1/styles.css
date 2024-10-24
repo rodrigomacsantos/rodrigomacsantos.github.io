@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #000000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.nome {
+    background-color: #7f7f7f;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.nome h1 {
+    text-align: center;
+    color: #000000;
+}
+
+.web {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.web h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.web-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.web p {
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.web img {
+    max-width: 200px;
+    height: auto;
+}
+
+.content-wrapper {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.intro-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    flex: 1;
+}
+
+.intro-section ul {
+    list-style-position: inside;
+    margin-left: 20px;
+}
+
+.labs-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    flex: 1;
+}
+
+.labs-section h2 {
+    margin-bottom: 30px;
+}
+
+.lab-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.lab {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.lab:nth-child(odd) {
+    background-color: #7f7f7f;
+    color: white;
+}
+
+.lab:nth-child(even) {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #000000;
+    background-color: grey;
+    font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    .content-wrapper, .web-content {
+        flex-direction: column;
+    }
+}
+.intro-section h2 {
+margin-bottom: 30px; 
+}
+.lab {
+padding: 12px 16px; 
+border: none;
+border-radius: 4px;
+text-decoration: none;
+}
