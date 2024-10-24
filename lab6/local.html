@@ -1,14 +1,19 @@
 <!DOCTYPE html>
+<!-- Documento HTML em português -->
 <html lang="pt">
     <head>
+        <!-- Configuração da viewport para responsividade -->
         <meta name="viewport"
 content="width=device-width,
 initial-scale=1.0">
         
         <title>Roma</title>
+        <!-- Links para folhas de estilo externas -->
         <link rel="stylesheet" href="styles.css"/>
+        <!-- Importação dos ícones Font Awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         <link rel="stylesheet" href="responsive.css"/>
+        <!-- Estilos CSS básicos inline para reset -->
         <style>
             * {
     box-sizing: border-box;
@@ -18,21 +23,26 @@ initial-scale=1.0">
 </style>
     </head>
     <body>
+        <!-- Cabeçalho com bandeira italiana e título -->
         <header>
             <div class="flag-container">
+                <!-- Cores da bandeira italiana -->
                 <div class="flag-green"></div>
                 <div class="flag-white"></div>
                 <div class="flag-red"></div>
             </div>
             <h1>Roma</h1>
         </header>
+        <!-- Barra de navegação com menu dropdown -->
         <nav height="50">
            
             <div class="dropdown">
+            <!-- Botão do menu dropdown com ícone -->
             <button class="dropbtn">
               Menu 
               <i class="fa fa-caret-down"></i>
             </button>
+            <!-- Conteúdo do menu dropdown com ícones -->
             <div class="dropdown-content">
                 <a href="index.html"><i class="fas fa-home"></i> Home</a>
                 <a href="local.html"><i class="fas fa-map-marker-alt"></i> Localização</a>
@@ -45,14 +55,19 @@ initial-scale=1.0">
             </div>
           </div> 
     </nav>
+        <!-- Conteúdo principal com mapa e descrição -->
         <main>
             <h2>Localização</h2>
+            <!-- Mapa incorporado do Google Maps mostrando Roma -->
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d190028.7643209635!2d12.5359979!3d41.9100711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f6196f9928ebb%3A0xb90f770693656e38!2zUm9tYSwgSXTDoWxpYQ!5e0!3m2!1spt-PT!2spt!4v1726827984843!5m2!1spt-PT!2spt" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <!-- Descrição da localização de Roma -->
             <p>Roma, capital da Itália, está localizada no continente europeu, na região central do país. A cidade fica às margens do rio Tibre, cerca de 24 km do mar Tirreno, e é famosa por suas sete colinas. Roma possui um clima mediterrâneo, com verões quentes e invernos amenos.</p>
         </main>
+        <!-- Seção lateral vazia para conteúdo adicional -->
         <aside>
         
         </aside>
+        <!-- Rodapé com informação do curso -->
         <footer>
             <p>DIW 2024</p>
         </footer>

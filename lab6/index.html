@@ -1,39 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt">
     <head>
+        <!-- Configuração para responsividade em dispositivos móveis -->
         <meta name="viewport"
 content="width=device-width,
 initial-scale=1.0">
         
+        <!-- Título da página -->
         <title>Roma</title>
+        <!-- Links para arquivos CSS externos -->
         <link rel="stylesheet" href="styles.css"/>
+        <!-- Link para os ícones do Font Awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <!-- CSS para responsividade -->
         <link rel="stylesheet" href="responsive.css"/>
+        <!-- Estilos CSS básicos inline -->
         <style>
+            /* Reset básico de CSS */
             * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-</style>
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+        </style>
     </head>
     <body>
+        <!-- Cabeçalho verde no topo da página -->
         <div class="green-header"></div>
+        <!-- Cabeçalho principal com bandeira italiana -->
         <header>
+            <!-- Container para a bandeira italiana -->
             <div class="flag-container">
                 <div class="flag-green"></div>
                 <div class="flag-white"></div>
                 <div class="flag-red"></div>
             </div>
+            <!-- Título principal -->
             <h1>Roma</h1>
         </header>
+        <!-- Barra de navegação -->
         <nav height="50">
-           
-                <div class="dropdown">
+            <!-- Menu dropdown -->
+            <div class="dropdown">
                 <button class="dropbtn">
-                  Menu 
-                  <i class="fa fa-caret-down"></i>
+                    Menu 
+                    <i class="fa fa-caret-down"></i>
                 </button>
+                <!-- Links do menu dropdown -->
                 <div class="dropdown-content">
                     <a href="index.html"><i class="fas fa-home"></i> Home</a>
                     <a href="local.html"><i class="fas fa-map-marker-alt"></i> Localização</a>
@@ -44,33 +57,40 @@ initial-scale=1.0">
                     <a href="pontosinteresse.html"><i class="fas fa-landmark"></i> Pontos de Interesse</a>
                     <a href="capitais.html"><i class="fas fa-city"></i> Capitais</a>
                 </div>
-              </div> 
+            </div> 
         </nav>
+        <!-- Conteúdo principal da página -->
         <main>
             <h2>Home</h2>
+            <!-- Imagem do Coliseu -->
             <img src="images/roma.jpg" alt="Fotografia Coliseu, Roma" height="200" width="300">
             <p>Coliseu - Roma, Itália</p>
             <hr>
+            <!-- Texto sobre Roma -->
             <p>A minha cidade é muito linda!!!</p>
             <p>Roma, a capital da Itália, é uma cidade com uma rica história que se estende por mais de 2.500 anos. Conhecida como a "Cidade Eterna," foi o coração do poderoso Império Romano, influenciando a política, a cultura e a arquitetura do mundo ocidental. Roma abriga monumentos icônicos como o Coliseu, o Panteão e o Fórum Romano, além do Vaticano, o centro espiritual da Igreja Católica, onde se encontra a Basílica de São Pedro e a Capela Sistina, famosa pelos afrescos de Michelangelo. Hoje, Roma combina sua herança histórica com a vida moderna, sendo um importante centro de arte, moda e culinária.</p>
+            <!-- Link para Wikipedia -->
             <a><b>Acede à:</b></a> <a href="https://pt.wikipedia.org/wiki/Roma"> <i></i>Wikipédia</i></a>
         </main>
 
     </body>
 
-        <aside>
-            <h3>Curiosidades sobre Roma</h3>
-            <div class="quick-facts">
-                <h4>Fatos Rápidos</h4>
-                <ul>
-                    <li>População: cerca de 4,3 milhões</li>
-                    <li>Fundação: 753 a.C.</li>
-                    <li>Idioma: Italiano</li>
-                    <li>Área: 1.285 km²</li>
-                </ul>
-            </div>
+    <!-- Barra lateral com curiosidades -->
+    <aside>
+        <h3>Curiosidades sobre Roma</h3>
+        <div class="quick-facts">
+            <h4>Fatos Rápidos</h4>
+            <!-- Lista de fatos sobre Roma -->
+            <ul>
+                <li>População: cerca de 4,3 milhões</li>
+                <li>Fundação: 753 a.C.</li>
+                <li>Idioma: Italiano</li>
+                <li>Área: 1.285 km²</li>
+            </ul>
+        </div>
     </aside>
 
+    <!-- Rodapé da página -->
     <footer>
         <p>DIW 2024</p>
     </footer>

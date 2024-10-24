@@ -1,50 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Metadados, incluindo codificação de caracteres e viewport para dispositivos móveis -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título da página -->
     <title>Vídeo Background</title>
+
+    <!-- Estilos internos -->
     <style>
+        /* Zerar margens e preenchimentos, e definir box-sizing para incluir bordas no cálculo da largura */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
+        /* Estilos para a seção do vídeo */
         .video {
-            position: relative;
-            height: 100vh;
-            width: 100vw;
-            overflow: hidden;
+            position: relative; /* Para permitir que o conteúdo dentro da div seja posicionado relativamente a ela */
+            height: 100vh; /* Altura de 100% da viewport */
+            width: 100vw; /* Largura de 100% da viewport */
+            overflow: hidden; /* Esconder qualquer conteúdo que ultrapasse os limites */
         }
 
+        /* Estilos para o vídeo de fundo */
         #background-video {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+            position: absolute; /* Para que o vídeo preencha toda a área da div */
+            width: 100%; /* Largura total da viewport */
+            height: 100%; /* Altura total da viewport */
+            object-fit: cover; /* Manter a proporção do vídeo e cobrir toda a área */
         }
 
+        /* Estilos para o texto centralizado sobre o vídeo */
         .texto {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: white;
-            padding: 20px 40px;
-            border-radius: 5px;
-            text-align: center;
-            min-width: 300px;
-            background-color: #009246;
+            position: absolute; /* Posicionamento absoluto para centralização */
+            top: 50%; /* Centralizar verticalmente */
+            left: 50%; /* Centralizar horizontalmente */
+            transform: translate(-50%, -50%); /* Ajustar para manter o texto exatamente no centro */
+            color: white; /* Cor do texto branca */
+            padding: 20px 40px; /* Espaçamento interno ao redor do texto */
+            border-radius: 5px; /* Bordas arredondadas */
+            text-align: center; /* Alinhar o texto ao centro */
+            min-width: 300px; /* Definir uma largura mínima para o texto */
+            background-color: #009246; /* Cor de fundo para o texto (verde) */
         }
 
     </style>
 </head>
 <body>
+    <!-- Container para o vídeo de fundo e o texto sobreposto -->
     <div class="video">
+        <!-- Vídeo que será exibido como fundo -->
         <video autoplay muted loop id="background-video">
+            <!-- Fonte do vídeo, com o formato mp4 -->
             <source src="videos/background.mp4" type="video/mp4">
         </video>
+
+        <!-- Texto que será exibido sobre o vídeo -->
         <div class="texto">
             <h1>Roma</h1>
             <p>Fontana di Trevi</p>

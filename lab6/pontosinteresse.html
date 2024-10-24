@@ -1,14 +1,19 @@
 <!DOCTYPE html>
+<!-- Documento HTML em inglês -->
 <html lang="en">
   <head>
+    <!-- Configuração da viewport para responsividade -->
     <meta name="viewport"
 content="width=device-width,
 initial-scale=1.0">
     
     <title>Roma</title>
+    <!-- Folhas de estilo externas -->
     <link rel="stylesheet" href="styles.css"/>
+    <!-- Importação dos ícones Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="responsive.css"/>
+    <!-- Reset CSS básico -->
     <style>
         * {
 box-sizing: border-box;
@@ -17,9 +22,10 @@ padding: 0;
 }
 </style>
 </head>
+    <!-- Classe específica para a página de pontos de interesse -->
     <body class="pontosinteresse-pagina">
 
-    
+    <!-- Cabeçalho com bandeira italiana -->
     <header>
         <div class="flag-container">
             <div class="flag-green"></div>
@@ -29,6 +35,7 @@ padding: 0;
         <h1>Roma</h1>
     </header>
 
+    <!-- Menu de navegação dropdown -->
     <nav height="50">
            
       <div class="dropdown">
@@ -36,6 +43,7 @@ padding: 0;
         Menu 
         <i class="fa fa-caret-down"></i>
       </button>
+      <!-- Links do menu com ícones -->
       <div class="dropdown-content">
           <a href="index.html"><i class="fas fa-home"></i> Home</a>
           <a href="local.html"><i class="fas fa-map-marker-alt"></i> Localização</a>
@@ -49,6 +57,7 @@ padding: 0;
     </div> 
 </nav>
       <main>
+        <!-- Seção geral de Pontos de Interesse -->
         <div class="section" id="PontosInteresse">
             <h3>Pontos de Interesse</h3>
             <p>
@@ -57,6 +66,7 @@ padding: 0;
                 </ul>
                 </p>
 </div>
+                <!-- Lista ordenada dos melhores restaurantes -->
                 <div class="section" id="Restaurantes">
                     <h3>Top 5 Restaurantes</h3>
                     <p>
@@ -69,6 +79,7 @@ padding: 0;
                         </ol>
                         </p>
 </div>
+                        <!-- Lista ordenada dos principais monumentos -->
                         <div class="section" id="Monumentos">
                             <h3>Top 5 Monumentos</h3>
                             <p>
@@ -82,6 +93,7 @@ padding: 0;
                                 </p>
         </div>
 
+        <!-- Lista não ordenada de locais recomendados -->
         <div class="section" id="Locais">
             <h3>Locais a não perder</h3>
             <p>
@@ -95,6 +107,7 @@ padding: 0;
                 </p>
 </div>
 
+<!-- Seção com imagem do melhor local para fotos -->
 <div class="section" id="LocalFoto">
   <h3>Melhor local para tirar uma foto</h3>
   <div style="width: 100%; max-height: 400px; overflow: hidden;">
@@ -102,15 +115,17 @@ padding: 0;
   </div>
 </div>
 
-
+<!-- Tabela com ranking mensal para visitas -->
 <div class="section" id="AlturaParaVisitar">
     <h3>Melhor altura para visitar</h3>
     <p>
         <table border="1">
+            <!-- Cabeçalho da tabela -->
             <tr>
               <th>Mês</th>
               <th>Ranking</th>
             </tr>
+            <!-- Dados mensais com pontuação de 1 a 10 -->
             <tr>
               <td>Jan</td>
               <td>05/10</td>
@@ -166,10 +181,12 @@ padding: 0;
     
 </body>
 
+<!-- Seção lateral vazia -->
 <aside>
         
 </aside>
 
+<!-- Rodapé com informação do curso -->
 <footer>
   <p>DIW 2024</p>
 </footer>

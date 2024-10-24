@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt">
+<!-- Cabeçalho do documento com configurações básicas -->
 <head>
+    <!-- Codificação de caracteres -->
     <meta charset="UTF-8">
+    <!-- Configuração de viewport para responsividade -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capitais</title>
+    <!-- Link para folha de estilo externa -->
     <link rel="stylesheet" href="capitais.css">
     
+    <!-- Estilo inline para fixar o cabeçalho no topo -->
     <style>
         header {
             position: sticky;
             top: 0;
             background-color: #fff; 
-            z-index: 1000; 
+            z-index: 1000; /* Garante que o header fique sobre outros elementos */
         }
     </style>
-
-    
 </head>
 <body>
+    <!-- Cabeçalho fixo com navegação -->
     <header>
         <h1>Capitais</h1>
+        <!-- Menu de navegação com âncoras internas -->
         <nav>
             <a href="#poema">Poema</a>
             <a href="#paisagem">Paisagem</a>
@@ -28,6 +33,7 @@
         </nav>
     </header>
     
+    <!-- Seção do poema de Manuel Bandeira -->
     <article id="poema">
         <div>
             <p>"Vou-me embora pra Pasárgada<br>
@@ -39,6 +45,7 @@
         </div>
     </article>
 
+    <!-- Seção com imagem de Roma e créditos do fotógrafo -->
     <article id="paisagem">
         <div class="imagem-container">
           <img src="images/capitaisroma.jpg" alt="Roma">
@@ -48,146 +55,168 @@
         </div>
     </article>
  
+    <!-- Grid de imagens das capitais europeias -->
     <article id="cidades">
+        <!-- Lisboa -->
         <section>
             <img src="images/lisboa.avif" alt="Lisboa">
             <div>Lisboa</div>
         </section>
+        <!-- Milão -->
         <section>
             <img src="images/milao.avif" alt="Milão">
             <div>Milão</div>
         </section>
+        <!-- Londres -->
         <section>
             <img src="images/londres.avif" alt="Londres">
             <div>Londres</div>
         </section>
+        <!-- Praga -->
         <section>
             <img src="images/praga.avif" alt="Praga">
             <div>Praga</div>
         </section>
+        <!-- Roma -->
         <section>
             <img src="images/roma.avif" alt="Roma">
             <div>Roma</div>
         </section>
+        <!-- Varsóvia -->
         <section>
             <img src="images/varsovia.avif" alt="Varsóvia">
             <div>Varsóvia</div>
         </section>
+        <!-- Reyiavik -->
         <section>
             <img src="images/reykiavik.avif" alt="Reyiavik">
             <div>Reyiavik</div>
         </section>
+        <!-- Budapeste -->
         <section>
             <img src="images/budapeste.avif" alt="Budapeste">
             <div>Budapeste</div>
         </section>
+        <!-- Bruxelas -->
         <section>
             <img src="images/bruxelas.avif" alt="Bruxelas">
             <div>Bruxelas</div>
         </section>
+        <!-- Viena -->
         <section>
             <img src="images/viena.avif" alt="Viena">
             <div>Viena</div>
         </section>
+        <!-- Paris -->
         <section>
             <img src="images/paris.avif" alt="Paris">
             <div>Paris</div>
         </section>
+        <!-- Amsterdã -->
         <section>
             <img src="images/capitaisamsterdao.jpg" alt="Amsterdão">
             <div>Amsterdã</div>
         </section>
     </article>
 
+    <!-- Barra lateral vazia -->
     <aside>
         
     </aside>
 
+    <!-- Rodapé da página -->
     <footer>
         <p>DIW 2024</p>
     </footer>
 
+    <!-- Seção com efeito parallax -->
     <article>
         <style>
+            /* Estilo para o efeito parallax */
             .parallax {
             background-image: url(images/fonte_grande.jpg);
             min-height: 500px;
             background-attachment: fixed;
-            /* centrar e escalar imagem */
+            /* Configurações para centralizar e escalar a imagem de fundo */
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
             }
 
+            /* Estilo para o texto sobre o parallax */
             .parallax p {
-        color: white;
-        font-size: 72px;
-        text-align: center;
-        padding-top: 200px;
+                color: white;
+                font-size: 72px;
+                text-align: center;
+                padding-top: 200px;
             }
-            </style>
-            <div class="parallax">
-                <p>Adoro Roma</p>
-            </div>
+        </style>
+        <!-- Container do efeito parallax -->
+        <div class="parallax">
+            <p>Adoro Roma</p>
+        </div>
     </article>
+
+    <!-- Galeria de imagens com efeitos -->
     <article id="gallery">
-<h2>Galeria</h2>
-<div class="gallery-container">
+        <h2>Galeria</h2>
+        <div class="gallery-container">
+            <!-- Primeiro conjunto - Coliseu -->
+            <div class="gallery-item">
+                <img src="images/galeria1.jpg" alt="Coliseu">
+                <p>Coliseu</p>
+            </div>
+            <div class="gallery-item zoom">
+                <img src="images/galeria1.jpg" alt="Coliseu">
+                <p>Coliseu</p>
+            </div>
+            <div class="gallery-item rotate">
+                <img src="images/galeria1.jpg" alt="Coliseu">
+                <p>Coliseu</p>
+            </div>
 
-<div class="gallery-item">
-<img src="images/galeria1.jpg" alt="Coliseu">
-<p>Coliseu</p>
-</div>
-<div class="gallery-item zoom">
-<img src="images/galeria1.jpg" alt="Coliseu">
-<p>Coliseu</p>
-</div>
-<div class="gallery-item rotate">
-<img src="images/galeria1.jpg" alt="Coliseu">
-<p>Coliseu</p>
-</div>
+            <!-- Segundo conjunto - Fontana di Trevi -->
+            <div class="gallery-item">
+                <img src="images/galeria2.jpg" alt="Fontana di Trevi">
+                <p>Fontana di Trevi</p>
+            </div>
+            <div class="gallery-item zoom">
+                <img src="images/galeria2.jpg" alt="Fontana di Trevi">
+                <p>Fontana di Trevi</p>
+            </div>
+            <div class="gallery-item rotate">
+                <img src="images/galeria2.jpg" alt="Fontana di Trevi">
+                <p>Fontana di Trevi</p>
+            </div>
 
+            <!-- Terceiro conjunto - Basílica de San Pedro -->
+            <div class="gallery-item">
+                <img src="images/galeria3.jpg" alt="Basílica de San Pedro">
+                <p>Basílica de San Pedro</p>
+            </div>
+            <div class="gallery-item zoom">
+                <img src="images/galeria3.jpg" alt="Basílica de San Pedro">
+                <p>Basílica de San Pedro</p>
+            </div>
+            <div class="gallery-item rotate">
+                <img src="images/galeria3.jpg" alt="Basílica de San Pedro">
+                <p>Basílica de San Pedro</p>
+            </div>
 
-<div class="gallery-item">
-<img src="images/galeria2.jpg" alt="Fontana di Trevi">
-<p>Fontana di Trevi</p>
-</div>
-<div class="gallery-item zoom">
-<img src="images/galeria2.jpg" alt="Fontana di Trevi">
-<p>Fontana di Trevi</p>
-</div>
-<div class="gallery-item rotate">
-<img src="images/galeria2.jpg" alt="Fontana di Trevi">
-<p>Fontana di Trevi</p>
-</div>
-
-<div class="gallery-item">
-<img src="images/galeria3.jpg" alt="Basílica de San Pedro">
-<p>Basílica de San Pedro</p>
-</div>
-<div class="gallery-item zoom">
-<img src="images/galeria3.jpg" alt="Basílica de San Pedro">
-<p>Basílica de San Pedro</p>
-</div>
-<div class="gallery-item rotate">
-<img src="images/galeria3.jpg" alt="Basílica de San Pedro">
-<p>Basílica de San Pedro</p>
-</div>
-
-
-<div class="gallery-item">
-<img src="images/galeria4.jpg" alt="Panteão">
-<p>Panteão</p>
-</div>
-<div class="gallery-item zoom">
-<img src="images/galeria4.jpg" alt="Panteão">
-<p>Panteão</p>
-</div>
-<div class="gallery-item rotate">
-<img src="images/galeria4.jpg" alt="Panteão">
-<p>Panteão</p>
-</div>
-</div>
-</article>
+            <!-- Quarto conjunto - Panteão -->
+            <div class="gallery-item">
+                <img src="images/galeria4.jpg" alt="Panteão">
+                <p>Panteão</p>
+            </div>
+            <div class="gallery-item zoom">
+                <img src="images/galeria4.jpg" alt="Panteão">
+                <p>Panteão</p>
+            </div>
+            <div class="gallery-item rotate">
+                <img src="images/galeria4.jpg" alt="Panteão">
+                <p>Panteão</p>
+            </div>
+        </div>
+    </article>
 </body>
 </html>

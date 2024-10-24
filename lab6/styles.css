@@ -1,9 +1,11 @@
+/* Animação para mudança de cores do título */
 @keyframes colorChange {
-    33% { color: #009246; }
-    66% { color: #CE2B37; }
-    99% { color: #000000; }
+    33% { color: #009246; } /* Verde da bandeira italiana */
+    66% { color: #CE2B37; } /* Vermelho da bandeira italiana */
+    99% { color: #000000; } /* Preto */
 }
 
+/* Estilos base do corpo do site */
 body {
     background-color: whitesmoke;
     font-family: Arial, sans-serif;
@@ -11,11 +13,13 @@ body {
     padding: 0;
 }
 
+/* Estilos do cabeçalho */
 header {
     position: relative;
     text-align: center;
 }
 
+/* Container da bandeira italiana */
 .flag-container {
     display: flex;
     position: absolute;
@@ -25,13 +29,14 @@ header {
     height: 100%;
 }
 
+/* Cores da bandeira italiana */
 .flag-green, .flag-white, .flag-red {
     flex: 1;
     height: 100%;
 }
 
 .flag-green {
-    background-color: #009246; 
+    background-color: #009246; /* Verde da bandeira italiana */
 }
 
 .flag-white {
@@ -39,9 +44,10 @@ header {
 }
 
 .flag-red {
-    background-color: #CE2B37; 
+    background-color: #CE2B37; /* Vermelho da bandeira italiana */
 }
 
+/* Estilo do título principal com animação */
 h1 {
     position: relative;
     background-color: rgba(255, 255, 255, 0.7); 
@@ -50,8 +56,10 @@ h1 {
     padding: 15px 30px;
     color: #000000;
     animation: colorChange 4s infinite;
+    text-transform: uppercase;
 }
 
+/* Estilos da navegação */
 nav {
     background-color: #f0f0f0;
     color: black;
@@ -71,6 +79,7 @@ nav a:hover {
     color: black;
 }
 
+/* Estilos do conteúdo principal */
 main {
     padding: 20px 40px;
     background-color: whitesmoke;
@@ -79,6 +88,7 @@ main {
     max-width: 1200px; 
 }
 
+/* Estilos dos títulos e parágrafos */
 h2 {
     padding: 5px;
     margin-top: 0; 
@@ -92,12 +102,14 @@ a {
     color: black;
 }
 
+/* Estilos das imagens nas seções */
 section image {
     width: 100%;
     height: auto;
     margin: 20px 0;
 }
 
+/* Estilos dos subtítulos nas seções */
 .section h3 {
     color: black;
     font-size: 24px;
@@ -106,6 +118,7 @@ section image {
     margin-bottom: 20px;
 }
 
+/* Estilos dos formulários */
 label {
     font-size: small;
 }
@@ -119,6 +132,7 @@ label, input {
     margin-bottom: 10px;
 }
 
+/* Estilo do rodapé fixo */
 footer {
     color: white;
     background-color: #272727;
@@ -128,6 +142,7 @@ footer {
     width: 100vw;
 }
 
+/* Estilos dos links nas seções */
 .section-links {
     margin-bottom: 20px;
 }
@@ -138,25 +153,27 @@ footer {
     margin-right: 15px;
 }
 
+/* Estilos específicos para a página de pontos de interesse */
 body.pontosinteresse-pagina ul{
     li:nth-child(odd){
-    color:#009246
+    color:#009246 /* Verde para itens ímpares */
 }}
-
 
 body.pontosinteresse-pagina ul{
     li:nth-child(even){
-    color:#CE2B37
+    color:#CE2B37 /* Vermelho para itens pares */
 }
 }
+
 body.pontosinteresse-pagina ul{
-    list-style-type: square
+    list-style-type: square /* Lista com marcadores quadrados */
 }
 
 body.pontosinteresse-pagina ol{
-    list-style-type: upper-roman
+    list-style-type: upper-roman /* Lista com numeração romana maiúscula */
 }
 
+/* Estilos da tabela na página de pontos de interesse */
 .pontosinteresse-pagina tr:nth-child(even) {
     background-color: #ffffff;
     color: black;
@@ -182,16 +199,12 @@ body.pontosinteresse-pagina ol{
     color: white;
 }
 
-h1 {
-    text-transform: uppercase;
-}
-
+/* Tamanho dos itens de lista */
 li {
     font-size: 200%;
 }
 
-
+/* Fonte padrão para todo o site */
 * {
     font-family: 'Courier', monospace;
 }
-

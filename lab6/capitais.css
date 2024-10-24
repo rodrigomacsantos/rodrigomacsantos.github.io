@@ -1,3 +1,4 @@
+/* Estilo do cabeçalho fixo no topo */
 header {
     position: sticky;
     top: 0;
@@ -7,14 +8,14 @@ header {
     padding: 10px 20px;
 }
 
-
+/* Estilo do título principal */
 h1 {
     margin: 0;
     font-size: 24px;
     color:  black;
 }
 
-
+/* Estilo base para links na navegação */
 nav a {
     padding: 20px;
     text-decoration: none;
@@ -22,12 +23,12 @@ nav a {
     font-weight: bold;
 }
 
-
+/* Estilo específico para o último link */
 #last-link {
     background-color: #ddd;
 }
 
-
+/* Estados diferentes dos links na navegação */
 nav a:link {
     color: rgb(255, 0, 255);
 }
@@ -44,6 +45,7 @@ nav a:active {
     color: #000000;
 }
 
+/* Estilo da seção do poema */
 #poema {
     background-color: #71a0ff;
     width: 100vw;
@@ -53,6 +55,7 @@ nav a:active {
     align-items: center;
 }
 
+/* Estilo do container do poema */
 #poema div {
     text-align: center;
     font-size: 18px;
@@ -60,6 +63,7 @@ nav a:active {
     
 }
 
+/* Estilo para texto em itálico no poema */
 #poema em {
     display: block;
     margin-top: 10px;
@@ -69,31 +73,33 @@ nav a:active {
     
 }
 
+/* Estilo base para seções */
 section {
     padding: 40px;
 }
 
-
-
+/* Estilo dos títulos de segundo nível */
 h2 {
     font-size: 20px;
 }
 
+/* Estilos para a imagem de paisagem */
 #paisagem {
     width: 100vw;
     height: auto;
-  }
+}
   
-  .imagem-container {
+.imagem-container {
     position: relative;
-  }
+}
   
-  .imagem-container img {
+.imagem-container img {
     width: 100vw;
     height: 200vh;
-  }
+}
   
-  .autor {
+/* Estilo para a assinatura do autor na imagem */
+.autor {
     position: absolute;
     bottom: 10px;
     right: 10px;
@@ -101,9 +107,10 @@ h2 {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 5px;
     font-size: 12px;
-  }
+}
 
-  #cidades {
+/* Grid de cidades */
+#cidades {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -111,6 +118,7 @@ h2 {
     margin: 0 auto;
 }
 
+/* Estilo das seções com animação de hover */
 section {
     background-color: white;
     border-radius: 10px;
@@ -124,18 +132,21 @@ section:hover {
     transform: scale(1.05);
 }
 
+/* Estilo base para imagens */
 img {
     width: 100%;
     height: 150px;
     object-fit: cover;
 }
 
+/* Estilo para divs genéricas */
 div {
     padding: 10px;
     text-align: center;
     font-weight: bold;
 }
 
+/* Media queries para responsividade do grid de cidades */
 @media (max-width: 600px) {
     #cidades {
         grid-template-columns: repeat(2, 1fr);
@@ -148,21 +159,25 @@ div {
     }
 }
 
+/* Fonte padrão para todo o site */
 * {
     font-family: 'Courier', monospace;
 }
 
+/* Estilos da galeria */
 #gallery {
     padding: 20px;
     background-color: #f0f0f0;
 }
 
+/* Estilo do título da galeria */
 h2 {
     text-align: center;
     font-size: 24px;
     margin-bottom: 20px;
 }
 
+/* Container da galeria com grid */
 .gallery-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 colunas */
@@ -170,6 +185,7 @@ h2 {
     justify-items: center;
 }
 
+/* Estilo dos itens da galeria */
 .gallery-item {
     width: 300px;
     display: flex;
@@ -178,6 +194,7 @@ h2 {
     text-align: center;
 }
 
+/* Estilo das imagens na galeria */
 .gallery-item img {
     width: 300px;
     height: 200px;
@@ -186,37 +203,36 @@ h2 {
     transition: transform 0.3s ease;
 }
 
+/* Estilo dos parágrafos na galeria */
 .gallery-item p {
     margin-top: 10px;
     font-size: 16px;
 }
 
-
+/* Efeito de zoom ao passar o mouse */
 .gallery-item.zoom img:hover {
     transform: scale(1.1);
 }
 
-
+/* Efeito de rotação permanente */
 .gallery-item.rotate img {
     transform: rotate(5deg);
 }
 
-
+/* Remove a rotação ao passar o mouse */
 .gallery-item.rotate img:hover {
     transform: rotate(0);
 }
 
-
+/* Media queries para responsividade da galeria */
 @media (max-width: 800px) {
     .gallery-container {
         grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas menores */
     }
 }
 
-
 @media (max-width: 500px) {
     .gallery-container {
         grid-template-columns: 1fr; /* 1 coluna em telas muito pequenas */
     }
 }
-

@@ -1,51 +1,68 @@
-
-
+/* Estilos para telas com largura máxima de 961px (dispositivos móveis e tablets) */
 @media (max-width: 961px) {
 
-
-nav {
-    position: relative;
-    display: inline-block;
-  }
-  
-  nav a {display: inline-block;}
-  
-  .dropdown {
-    background-color: green;
-    color: white;
-    padding: 16px;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdown-content a:hover {background-color: #ddd;}
-  
-  nav:hover .dropdown-content {display: block;}
-  
-  nav:hover .dropdown {background-color: #3e8e41;}
-  
-}
-
-@media (min-width: 961px) {
-  .dropbtn {
+  /* Configuração básica da navegação */
+  nav {
+      position: relative;
+      display: inline-block;
+    }
+    
+    /* Links da navegação em linha */
+    nav a {
+      display: inline-block;
+    }
+    
+    /* Estilo do botão dropdown */
+    .dropdown {
+      background-color: green;
+      color: white;
+      padding: 16px;
+    }
+    
+    /* Container do conteúdo dropdown (inicialmente oculto) */
+    .dropdown-content {
       display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+    }
+    
+    /* Estilo dos links dentro do dropdown */
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    /* Efeito hover nos links do dropdown */
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+    
+    /* Mostra o conteúdo dropdown ao passar o mouse na navegação */
+    nav:hover .dropdown-content {
+      display: block;
+    }
+    
+    /* Muda a cor do botão dropdown ao passar o mouse */
+    nav:hover .dropdown {
+      background-color: #3e8e41;
+    }
+    
   }
   
-  .dropdown-content {
-      display: block;
-      position: static;
-      background-color: transparent;
-      box-shadow: none;
+  /* Estilos para telas com largura mínima de 961px (desktop) */
+  @media (min-width: 961px) {
+    /* Oculta o botão dropdown em telas grandes */
+    .dropbtn {
+        display: none;
+    }
+    
+    /* Mostra o conteúdo do dropdown como menu normal em telas grandes */
+    .dropdown-content {
+        display: block;
+        position: static;
+        background-color: transparent;
+        box-shadow: none;
+    }
   }
-}

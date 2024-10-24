@@ -1,14 +1,19 @@
 <!DOCTYPE html>
+<!-- Documento HTML em português -->
 <html lang="pt">
     <head>
+        <!-- Configuração da viewport para responsividade -->
         <meta name="viewport"
 content="width=device-width,
 initial-scale=1.0">
         
         <title>Roma</title>
+        <!-- Folhas de estilo externas -->
         <link rel="stylesheet" href="styles.css"/>
+        <!-- Importação dos ícones Font Awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         <link rel="stylesheet" href="responsive.css"/>
+        <!-- Reset CSS básico -->
         <style>
             * {
     box-sizing: border-box;
@@ -18,14 +23,17 @@ initial-scale=1.0">
 </style>
     </head>
     <body>
+        <!-- Cabeçalho com bandeira italiana -->
         <header>
             <div class="flag-container">
+                <!-- Cores da bandeira italiana -->
                 <div class="flag-green"></div>
                 <div class="flag-white"></div>
                 <div class="flag-red"></div>
             </div>
             <h1>Roma</h1>
         </header>
+        <!-- Menu de navegação dropdown -->
         <nav height="50">
            
             <div class="dropdown">
@@ -33,6 +41,7 @@ initial-scale=1.0">
               Menu 
               <i class="fa fa-caret-down"></i>
             </button>
+            <!-- Links do menu com ícones -->
             <div class="dropdown-content">
                 <a href="index.html"><i class="fas fa-home"></i> Home</a>
                 <a href="local.html"><i class="fas fa-map-marker-alt"></i> Localização</a>
@@ -47,30 +56,36 @@ initial-scale=1.0">
     </nav>
         <main>
             <h2>Multimédia</h2>
+            <!-- Links de navegação interna da página -->
             <div class="section-links">
                 <a href="#fotografias">Fotografias</a>
                 <a href="#video">Vídeo</a>
                 <a href="#poema">Poema</a>
             </div>
 
+            <!-- Seção de fotografias com miniaturas clicáveis -->
             <div class="section" id="fotografias">
                 <h3>Fotografias</h3>
                 <p>
+                    <!-- Cada imagem é um link que abre a versão maior em nova aba -->
                     <a href="images/fonte_grande.jpg" target="_blank"><img src="images/fonte_small.jpg" alt="Fontana di Trevi"></a>
                     <a href="images/panteao_grande.jpg" target="_blank"><img src="images/panteao_small.jpg" alt="Panteão"></a> 
                     <a href="images/romapaisagem_grande.jpg" target="_blank"><img src="images/romapaisagem_small.jpg" alt="Paisagem de Roma"></a>
                 </p>
             </div>
        
+            <!-- Seção de vídeo com embed do YouTube -->
             <div class="section" id="video">
                 <h3>Vídeo</h3>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/1g7TrcIlpMk?si=iE63Eoy5qhlqc5xb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
 
+            <!-- Seção do poema com formatação em versos -->
             <div class="section" id="poema">
                 <h3>Poema</h3>
                 <h5>Roma, Eterna e Majestosa</h5>
                 <p>
+                    <!-- Versos do poema com quebras de linha usando <br> -->
                     Roma, cidade de pedra e tempo,<br>
                     onde o vento carrega histórias ao relento, <br> 
                     nas colinas ecoam passos antigos,  <br>
@@ -91,12 +106,15 @@ initial-scale=1.0">
                     Roma, mãe de impérios e arte,  <br>
                     em ti, o passado e o presente fazem parte.
                 </p>
+                <!-- Espaçamento adicional no final da página -->
                 <br><br><br>
             </div>
         </main>
+        <!-- Seção lateral vazia -->
         <aside>
         
         </aside>
+        <!-- Rodapé com informação do curso -->
         <footer>
             <p>DIW 2024</p>
         </footer>

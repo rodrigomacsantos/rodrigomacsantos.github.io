@@ -1,116 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport"
-content="width=device-width,
-initial-scale=1.0">
+    <!-- Metadados da página, incluindo a configuração de visualização para dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <!-- Título da página -->
     <title>Roma</title>
+
+    <!-- Links para folhas de estilo externas -->
     <link rel="stylesheet" href="styles.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="responsive.css"/>
+
+    <!-- Estilo interno básico para zerar margens e preenchimentos -->
     <style>
         * {
-box-sizing: border-box;
-margin: 0;
-padding: 0;
-}
-</style>
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
 </head>
 <body>
+    <!-- Cabeçalho com o título e a bandeira -->
     <header>
         <div class="flag-container">
+            <!-- Cores da bandeira divididas em três partes -->
             <div class="flag-green"></div>
             <div class="flag-white"></div>
             <div class="flag-red"></div>
         </div>
         <h1>Roma</h1>
     </header>
+
+    <!-- Navegação com menu dropdown -->
     <nav height="50">
-           
         <div class="dropdown">
-        <button class="dropbtn">
-          Menu 
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-            <a href="index.html"><i class="fas fa-home"></i> Home</a>
-            <a href="local.html"><i class="fas fa-map-marker-alt"></i> Localização</a>
-            <a href="multimedia.html"><i class="fas fa-photo-video"></i> Multimédia</a>
-            <a href="info.html"><i class="fas fa-info-circle"></i> Informação</a>
-            <a href="quizz.html"><i class="fas fa-question-circle"></i> Quizz</a>
-            <a href="viagem.html"><i class="fas fa-plane"></i> Viagem</a>
-            <a href="pontosinteresse.html"><i class="fas fa-landmark"></i> Pontos de Interesse</a>
-            <a href="capitais.html"><i class="fas fa-city"></i> Capitais</a>
-        </div>
-      </div> 
-</nav>
+            <button class="dropbtn">
+                Menu 
+                <!-- Ícone de seta para baixo -->
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <!-- Conteúdo do menu dropdown com links -->
+            <div class="dropdown-content">
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                <a href="local.html"><i class="fas fa-map-marker-alt"></i> Localização</a>
+                <a href="multimedia.html"><i class="fas fa-photo-video"></i> Multimédia</a>
+                <a href="info.html"><i class="fas fa-info-circle"></i> Informação</a>
+                <a href="quizz.html"><i class="fas fa-question-circle"></i> Quizz</a>
+                <a href="viagem.html"><i class="fas fa-plane"></i> Viagem</a>
+                <a href="pontosinteresse.html"><i class="fas fa-landmark"></i> Pontos de Interesse</a>
+                <a href="capitais.html"><i class="fas fa-city"></i> Capitais</a>
+            </div>
+        </div> 
+    </nav>
+
+    <!-- Conteúdo principal -->
     <main>
-        
         <h2>Viagem</h2>
     
-    <fieldset>
-        <form method="get" action="https://postman-echo.com/get"> 
+        <!-- Formulário de viagem com vários campos de entrada -->
+        <fieldset>
+            <form method="get" action="https://postman-echo.com/get"> 
+                <!-- Campo para o nome -->
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required><br><br>
+    
+                <!-- Campo para o apelido -->
+                <label for="apelido">Apelido:</label>
+                <input type="text" id="apelido" name="apelido" required><br><br>
+    
+                <!-- Campo para o email -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+    
+                <!-- Campo para a data de partida -->
+                <label for="data_partida">Data de partida:</label>
+                <input type="date" id="data_partida" name="data_partida" required><br><br>
+    
+                <!-- Campo para a data de regresso -->
+                <label for="data_regresso">Data de regresso:</label>
+                <input type="date" id="data_regresso" name="data_regresso" ><br><br>
+    
+                <!-- Campo para o número de passageiros -->
+                <label for="num_passageiros">Número de passageiros:</label>
+                <input type="number" id="num_passageiros" name="num_passageiros" min="1" ><br><br>
+    
+                <!-- Campo para selecionar o meio de transporte favorito -->
+                <label for="transporte">Meio de transporte favorito:</label>
+                <select id="transporte" name="transporte" >
+                    <option value="carro">Carro</option>
+                    <option value="comboio">Comboio</option>
+                    <option value="aviao">Avião</option>
+                    <option value="outros">Outros</option>
+                </select><br><br>
+    
+                <!-- Campo para selecionar o serviço desejado -->
+                <label for="servico">Qual o serviço que deseja na sua viagem:</label><br>
+                <input type="radio" id="basico" name="servico" value="basico" >
+                <label for="basico">Básico</label><br>
+                <input type="radio" id="premium" name="servico" value="premium" >
+                <label for="premium">Premium</label><br><br>
 
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required><br><br>
+                <!-- Campo para pedidos especiais -->
+                <label for="pedidos_especiais">Pedidos especiais:</label><br>
+                <textarea id="pedidos_especiais" name="pedidos_especiais" rows="4" cols="50"></textarea><br><br>
     
-            
-            <label for="apelido">Apelido:</label>
-            <input type="text" id="apelido" name="apelido" required><br><br>
-    
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
-    
-            
-            <label for="data_partida">Data de partida:</label>
-            <input type="date" id="data_partida" name="data_partida" required><br><br>
-    
-           
-            <label for="data_regresso">Data de regresso:</label>
-            <input type="date" id="data_regresso" name="data_regresso" ><br><br>
-    
-            
-            <label for="num_passageiros">Número de passageiros:</label>
-            <input type="number" id="num_passageiros" name="num_passageiros" min="1" ><br><br>
-    
-            
-            <label for="transporte">Meio de transporte favorito:</label>
-            <select id="transporte" name="transporte" >
-                <option value="carro">Carro</option>
-                <option value="comboio">Comboio</option>
-                <option value="aviao">Avião</option>
-                <option value="outros">Outros</option>
-            </select><br><br>
-    
-            
-            <label for="servico">Qual o serviço que deseja na sua viagem:</label><br>
-            <input type="radio" id="basico" name="servico" value="basico" >
-            <label for="basico">Básico</label><br>
-            <input type="radio" id="premium" name="servico" value="premium" >
-            <label for="premium">Premium</label><br><br>
+                <!-- Campo para o valor esperado de gasto por pessoa por dia -->
+                <label for="valor_gasto">Qual o valor que espera gastar por pessoa e por dia (em €):</label>
+                <input type="number" id="valor_gasto" name="valor_gasto" min="0" step="0.01" ><br><br>
 
-            <label for="pedidos_especiais">Pedidos especiais:</label><br>
-            <textarea id="pedidos_especiais" name="pedidos_especiais" rows="4" cols="50"></textarea><br><br>
+                <!-- Botão de envio do formulário -->
+                <input type="submit">
+            </form>
+        </fieldset>
+    </main>
     
-            
-            <label for="valor_gasto">Qual o valor que espera gastar por pessoa e por dia (em €):</label>
-            <input type="number" id="valor_gasto" name="valor_gasto" min="0" step="0.01" ><br><br>
+    <br><br><br>
 
-            <input type="submit">
-            
-        </form>
-        
-    </fieldset>
-</main>
-    <br>
-    <br>
-    <br>
-
+    <!-- Conteúdo auxiliar (atualmente vazio) -->
     <aside>
         
     </aside>
+
+    <!-- Rodapé com a assinatura -->
     <footer>
         <p>DIW 2024</p>
     </footer>
