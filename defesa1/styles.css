@@ -37,7 +37,7 @@ body {
 .web h2 {
     text-align: center;
     margin-bottom: 15px;
-    color: #333;
+    color: #000000;
 }
 
 .web-content {
@@ -127,11 +127,11 @@ footer {
     }
 }
 .intro-section h2 {
-margin-bottom: 30px; 
+    margin-bottom: 30px; 
 }
 .lab {
-padding: 12px 16px; 
-border: none;
-border-radius: 4px;
-text-decoration: none;
+    padding: 12px 16px; 
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
 }
