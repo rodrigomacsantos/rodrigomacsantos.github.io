@@ -1,6 +1,6 @@
 
 
-@media screen and (max-width: 900px) {
+@media (max-width: 961px) {
 
 
 nav {
@@ -35,4 +35,17 @@ nav {
   
   nav:hover .dropdown {background-color: #3e8e41;}
   
+}
+
+@media (min-width: 961px) {
+  .dropbtn {
+      display: none;
+  }
+  
+  .dropdown-content {
+      display: block;
+      position: static;
+      background-color: transparent;
+      box-shadow: none;
+  }
 }
