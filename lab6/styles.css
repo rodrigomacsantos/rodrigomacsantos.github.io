@@ -1,3 +1,9 @@
+@keyframes colorChange {
+    33% { color: #009246; }
+    66% { color: #CE2B37; }
+    99% { color: #000000; }
+}
+
 body {
     background-color: whitesmoke;
     font-family: Arial, sans-serif;
@@ -43,6 +49,7 @@ h1 {
     margin: 0;
     padding: 15px 30px;
     color: #000000;
+    animation: colorChange 4s infinite;
 }
 
 nav {
