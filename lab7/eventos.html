@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Angeles Chargers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+    </nav>
+    <h1>Los Angeles Chargers</h1>
+    <h2>História</h2>
+    <p id="historiaText">Os Los Angeles Chargers, fundados em 1959, são uma das equipes mais icónicas da NFL, originalmente baseada em Los Angeles antes de se mudar para San Diego e posteriormente retornar para LA.</p>
+    <button id="clickButton">Clique para saber mais</button>
+    <button id="dblclickButton">Clique Duplo para surpresa</button>
+    <div id="hoverArea" style="width: 200px; height: 100px; background-color: lightgray; margin-top: 10px;">
+        Passe o mouse aqui
+    </div>
+    <p id="mousePosition">Posição do Mouse: X: 0, Y: 0</p>
+    <h2>Conquistas</h2>
+    <ul>
+        <li>1x AFL Champion (1963)</li>
+        <li>15x Divisional Champions</li>
+        <li>14 Aparições nos Playoffs</li>
+        <li>6 Jogadores no Hall Of Fame</li>
+    </ul>
+    <h2>Jogador Favorito</h2>
+    <input type="text" id="textInput" placeholder="Escreve o nome do teu jogador favorito">
+    <p id="keyOutput"></p>
+    <h2>Área do Adepto</h2>
+    <form id="sampleForm">
+        <label for="nome">Nome do Adepto:</label>
+        <input type="text" id="nome" name="nome">
+        <br>
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade">
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+    <p id="formOutput"></p>
+    <footer>
+    </footer>
+    <script src="scripts/eventos.js"></script>
+</body>
+</html>

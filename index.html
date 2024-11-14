@@ -1,33 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rodrigo Santos</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Eventos</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Olá!</h1>
-    <p>Eis a minha primeira página Web!</p>
-    <p>Na Unidade Curricular de <a href="https://moodle.ensinolusofona.pt/course/view.php?id=28717">Desenvolvimento de Interfaces Web</a> abordaremos as seguintes tecnologias Web &#127760;: </p>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>React e Next.js</li>
-    </ul>
-<p>Iremos criar soluções criativas.</p>
-
-<p><a href="lab1/report.html">Lab1 </a></p>
-<p><a href="lab2/index.html">Lab2 </a></p>
-<p><a href="lab3/index.html">Lab3 </a></p>
-<p><a href="lab4/index.html">Lab4 </a></p>
-<p><a href="lab5/index.html">Lab5 </a></p>
-<p><a href="lab6/index.html">Lab6 </a></p>
-<p><a href="defesa1/index.html">Defesa 1 </a></p>
-<p><a href="lab7/index.html">Lab7 </a></p>
-<img src="images/diw.svg" alt="Desenvolvimento de Interfaces Web">
-
-<footer> Rodrigo Santos - Universidade Lusófona - Centro Universitário Lisboa - Engenharia Informática 2º Ano </footer>
+    <nav>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+    </nav>
+    <h1 id="hover-message">1. Passa por aqui!</h1>
+    <div class="inline">
+        <h2>2. Pinta-me!</h2>
+        <button id="redBtn">Red</button>
+        <button id="greenBtn">Green</button>
+        <button id="blueBtn">Blue</button>
+    </div>
+    <h2>3. Experimenta escrever...</h2>
+    <input type="text" id="text-input" placeholder="Escreve algo">
+    <h2>4. Escolha uma cor em inglês:</h2>
+    <input type="text" id="color-input" placeholder="Escreve uma cor em inglês">
+    <h2>5. Conta!</h2>
+    <p id="counter">Contagem: 0</p>
+    <button id="countBtn">Conta!</button>
+    <script src="scripts/index.js"></script>
 </body>
 </html>
