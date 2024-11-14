@@ -1,24 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Example</title>
+    <title>Eventos</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="section" id="section">
-        <p>
-            <ul>
-                <ol>
-                <span id=hover><li>Passa por aqui</li>
-                <li>Pinta-me</li>
-                <li>Experimenta escrever...</li>
-                <li>Escolha uma cor em ingles:</li>
-                <li><button onclick="count()">Conta</button><span id="counter">0</span></li>
-            </ul>
-        </ol>
-            </p>
-</div>
-<script src="scripts/main.js"></script>
+    <nav>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+    </nav>
+    <h1 id="hover-message">1. Passa por aqui!</h1>
+    <div class="inline">
+        <h2>2. Pinta-me!</h2>
+        <button id="redBtn">Red</button>
+        <button id="greenBtn">Green</button>
+        <button id="blueBtn">Blue</button>
+    </div>
+    <h2>3. Experimenta escrever...</h2>
+    <input type="text" id="text-input" placeholder="Escreve algo">
+    <h2>4. Escolha uma cor em inglês:</h2>
+    <input type="text" id="color-input" placeholder="Escreve uma cor em inglês">
+    <h2>5. Conta!</h2>
+    <p id="counter">Contagem: 0</p>
+    <button id="countBtn">Conta!</button>
+    <script src="scripts/index.js"></script>
 </body>
 </html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+    </nav>
+
+    <h1 id="hover-message" onmouseover="showHoverMessage()" onmouseout="resetHoverMessage()">1. Passa por aqui!</h1>
+
+    <div class="inline">
+        <h2>2. Pinta-me!</h2>
+        <button data-color="red">Red</button>
+        <button data-color="green">Green</button>
+        <button data-color="blue">Blue</button>
+    </div>
+
+    <h2>3. Experimenta escrever...</h2>
+    <input type="text" id="text-input" placeholder="Digite algo" oninput="changeInputColor()">
+
+    <h2>4. Escolha uma cor em inglês:</h2>
+    <select onchange="changeBackgroundColor(this)">
+        <option value="white">White</option>
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+    </select>
+
+    <h2>5. Conta!</h2>
+    <p id="counter">Contagem: 0</p>
+    <button onclick="incrementCounter()">Conta!</button>
+
+    <h2>6. Insira seu nome e idade:</h2>
+    <form id="user-form">
+        <input type="text" id="name" placeholder="Nome" required>
+        <input type="number" id="age" placeholder="Idade" required>
+        <button type="submit">Submit</button>
+    </form>
+    <p id="greeting-message"></p>
+    
+    <h2>7. Automatic Counter</h2>
+    <p id="auto-counter">Automatic Counter: 0</p>
+    
+    <script src="scripts/index.js"></script>
+</body>
+</html>
