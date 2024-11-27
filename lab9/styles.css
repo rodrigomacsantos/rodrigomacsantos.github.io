@@ -15,7 +15,7 @@ header {
     display: flex; /* Use flexbox for layout */
     flex-direction: row; /* Arrange items horizontally */
     justify-content: space-between; /* Distribute space between flex items */
-    background-color: #868b8e; /* Set background color */
+    background-color: #1e3a5f; /* Set background color to dark blue */
     padding: 20px; /* Add internal spacing */
     align-items: center; /* Vertically center items */
 }
@@ -35,7 +35,7 @@ header a {
 /* Main content area styling */
 main {
     grid-area: main_area; /* Assign to main grid area */
-    background-color: rgb(235, 235, 235); /* Set light gray background */
+    background-color: #e0f2ff; /* Set light blue background */
     padding: 30px; /* Add internal spacing */
 }
 
@@ -108,7 +108,7 @@ main section article button {
 /* Aside section styling */
 aside {
     grid-area: aside_area; /* Assign to aside grid area */
-    background-color: #868b8e; /* Set background color */
+    background-color: #1e3a5f; /* Set background color to dark blue */
     padding: 50px; /* Add internal spacing */
 }
 
@@ -170,11 +170,13 @@ aside p {
 footer {
     grid-area: footer_area; /* Assign to footer grid area */
     padding: 30px; /* Add internal spacing */
+    background-color: #1e3a5f; /* Set background color to dark blue */
 }
 
 /* Footer paragraph */
 footer p {
     text-align: center; /* Center align text */
+    color: white; /* Set text color to white */
 }
 
 /* Body grid layout */
