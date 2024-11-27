@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt">
+<!-- Declaração do tipo de documento e idioma da página como português. -->
+<head>
+    <meta charset="UTF-8">
+    <!-- Define a codificação de caracteres como UTF-8. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configura a viewport para permitir a responsividade em dispositivos móveis. -->
+    <title>Loja</title>
+    <!-- Define o título da página que será exibido na aba do navegador. -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Vincula um arquivo externo de estilo CSS chamado "styles.css". -->
+</head>
+<body>
+    <!-- Início do corpo da página. -->
+
+    <header>
+        <!-- Cabeçalho da página. -->
+        <h1>Lojinha</h1>
+        <!-- Título principal do cabeçalho. -->
+        <nav>
+            <!-- Barra de navegação. -->
+            <a href="#produtos">Produtos</a>
+            <!-- Link que leva à seção de produtos. -->
+            <a href="#cesto">Cesto</a>
+            <!-- Link que leva à seção do cesto. -->
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seção principal do conteúdo. -->
+        <h2>Selecione os seus Produtos</h2>
+        <!-- Subtítulo principal da seção. -->
+        <section id="submenu">
+            <!-- Submenu para filtros, ordenação e pesquisa. -->
+            <span>Filtrar</span>
+            <!-- Texto informativo sobre filtros. -->
+            <select id="filtros">
+                <!-- Menu dropdown para seleção de filtros. -->
+                <option value="todas">Todas as categorias</option>
+                <!-- Opção padrão para mostrar todas as categorias. -->
+            </select>
+            <span>Ordenar</span>
+            <!-- Texto informativo sobre ordenação. -->
+            <select id="ordenar">
+                <!-- Menu dropdown para ordenação de produtos. -->
+                <option value="vazio">Ordenar pelo preço</option>
+                <!-- Opção padrão para ordenar pelo preço (inicialmente vazia). -->
+                <option value="ascendente">Ascendente</option>
+                <!-- Opção para ordenar em ordem crescente de preço. -->
+                <option value="descendente">Descendente</option>
+                <!-- Opção para ordenar em ordem decrescente de preço. -->
+            </select>
+            <span>Procurar</span>
+            <!-- Texto informativo sobre pesquisa. -->
+            <input type="text" type="procurar" placeholder=" pesquise por produtos" id="pesquisar">
+            <!-- Campo de entrada para pesquisa de produtos com texto placeholder. -->
+        </section>
+        <section id="produtos"></section>
+        <!-- Seção onde os produtos serão exibidos dinamicamente. -->
+    </main>
+
+    <aside>
+        <!-- Barra lateral para exibir o cesto e informações de compra. -->
+        <h2>Produtos Selecionados:</h2>
+        <!-- Título da seção de produtos selecionados. -->
+        <section id="cesto">
+            <!-- Seção onde os produtos selecionados serão exibidos. -->
+        </section>
+        
+        <section id="checkout">
+            <!-- Seção de finalização de compra (checkout). -->
+            <h3>Custo Total: <span id="custoTotal"></span></h3>
+            <!-- Exibe o custo total, que será preenchido dinamicamente. -->
+            <p>És estudante do DEISI? <input type="checkbox" id="alunoDeisi"></p>
+            <!-- Checkbox para marcar se o usuário é estudante do DEISI. -->
+            <p>Cupão de Desconto: <input type="text" id="cupao"></p>
+            <!-- Campo de entrada para cupão de desconto. -->
+            <button type="submit" id="botao">Comprar</button>
+            <!-- Botão para finalizar a compra. -->
+        </section>
+    </aside>
+    
+    <footer>
+        <!-- Rodapé da página. -->
+        <p>DIW 2024</p>
+        <!-- Texto do rodapé. -->
+    </footer>
+   
+    <script src="produtos.js"></script>
+    <!-- Inclui o arquivo JavaScript responsável por gerenciar os produtos. -->
+    <script src="main.js"></script>
+    <!-- Inclui o arquivo JavaScript principal da aplicação. -->
+    
+</body>
+</html>
