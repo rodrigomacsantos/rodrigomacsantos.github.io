@@ -1,161 +1,189 @@
+/* Reset and base styles for the entire document */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif; /* Set default font */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
+/* Header styling */
 header {
-    background-color: #800080;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    grid-area: header_area; /* Assign to header grid area */
+    z-index: 10; /* Ensure header is above other elements */
+    position: sticky; /* Keep header fixed at top when scrolling */
+    top: 0; /* Stick to the very top of the viewport */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: row; /* Arrange items horizontally */
+    justify-content: space-between; /* Distribute space between flex items */
+    background-color: #868b8e; /* Set background color */
+    padding: 20px; /* Add internal spacing */
+    align-items: center; /* Vertically center items */
 }
 
+/* Header title styling */
 header h1 {
-    color: white;
-    font-size: 2rem;
+    color: white; /* Set text color to white */
 }
 
-nav {
-    display: flex;
-    gap: 2rem;
+/* Header link styling */
+header a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Set link color to white */
+    margin: 5px; /* Add small margin around links */
 }
 
-nav ul {
-    display: flex;
-    gap: 2rem;
-    list-style: none;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.1rem;
-}
-
+/* Main content area styling */
 main {
-    flex: 1;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
+    grid-area: main_area; /* Assign to main grid area */
+    background-color: rgb(235, 235, 235); /* Set light gray background */
+    padding: 30px; /* Add internal spacing */
 }
 
-h2 {
-    text-align: center;
-    margin-bottom: 2rem;
-    color: #333;
+/* Main section headings */
+main h2 {
+    text-align: center; /* Center align text */
+    margin-bottom: 20px; /* Add space below heading */
 }
 
-.produtos-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
+/* Aside section headings */
+aside h2 {
+    text-align: center; /* Center align text */
+    margin-bottom: 20px; /* Add space below heading */
+    margin-top: 20px; /* Add space above heading */
+    color: white; /* Set text color to white */
 }
 
-article {
-    background-color: #f9f9f9;
-    padding: 1.5rem;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    flex: 1 1 300px;
-    max-width: 350px;
+/* Main content section grid layout */
+main section {
+    display: grid; /* Use grid layout */
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Create 4 equal-width columns */
 }
 
-article img {
-    max-width: 200px;
-    height: auto;
-    margin-bottom: 1rem;
+/* Articles within main section */
+main section article {
+    position: relative; /* Enable absolute positioning of child elements */
+    z-index: 5; /* Ensure article is above background */
+    border-radius: 10px; /* Round the corners */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    margin: 10px; /* Add margin around articles */
+    background-color: white; /* Set white background */
+    padding: 20px; /* Add internal spacing */
 }
 
-article h3 {
-    margin-bottom: 0.5rem;
-    font-size: 1.2rem;
+/* Article headings */
+main section article h3 {
+    margin-bottom: 10px; /* Add space below heading */
+    text-align: center; /* Center align text */
 }
 
-.produto-preco {
-    color: #333;
-    font-weight: bold;
-    margin: 1rem 0;
+/* Images in main section articles */
+main section article img {
+    width: 40%; /* Set width to 40% of container */
+    height: auto; /* Maintain aspect ratio */
 }
 
-.produto-descricao {
-    font-size: 0.9rem;
-    color: #666;
-    margin-bottom: 1rem;
-    text-align: left;
+/* Subheadings in articles */
+main section article h4 {
+    margin-bottom: 20px; /* Add space below subheading */
+    margin-top: 10px; /* Add space above subheading */
 }
 
-.adicionar-ao-cesto, .remover-do-cesto {
-    background-color: #f0f0f0;
-    border: none;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+/* Paragraph text in articles */
+main section article p {
+    font-style: italic; /* Use italic style */
+    font-size: 15px; /* Set font size */
+    margin-bottom: 50px; /* Add significant space below paragraph */
 }
 
-.adicionar-ao-cesto:hover, .remover-do-cesto:hover {
-    background-color: #e0e0e0;
+/* Buttons in main section articles */
+main section article button {
+    position: absolute; /* Position relative to article */
+    bottom: 20px; /* Place at bottom of article */
+    padding: 5px; /* Add internal spacing */
+    border-radius: 10px; /* Round the corners */
 }
 
-.cesto {
-    margin-top: 3rem;
-    background-color: #800080;
-    padding: 2rem;
-    border-radius: 8px;
-    color: white;
+/* Aside section styling */
+aside {
+    grid-area: aside_area; /* Assign to aside grid area */
+    background-color: #868b8e; /* Set background color */
+    padding: 50px; /* Add internal spacing */
 }
 
-.cesto h2 {
-    color: white;
-    margin-bottom: 1.5rem;
+/* Aside section grid layout */
+aside section {
+    display: grid; /* Use grid layout */
+    grid-template-columns: 1fr 1fr 1fr; /* Create 3 equal-width columns */
 }
 
-.cesto-items {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    margin-bottom: 1.5rem;
+/* Articles in aside section */
+aside section article {
+    position: relative; /* Enable absolute positioning */
+    z-index: 5; /* Ensure article is above background */
+    border-radius: 10px; /* Round the corners */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    margin: 10px; /* Add margin around articles */
+    background-color: white; /* Set white background */
+    padding: 20px; /* Add internal spacing */
 }
 
-.cesto-item {
-    background: white;
-    padding: 1rem;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #333;
-    flex: 1 1 300px;
-    max-width: 350px;
+/* Aside section heading */
+aside section h2 {
+    text-align: center; /* Center align text */
+    color: white; /* Set text color to white */
+    margin-bottom: 20px; /* Add space below heading */
 }
 
-.cesto-item img {
-    width: 100px;
-    height: auto;
-    margin-bottom: 0.5rem;
+/* Images in aside section */
+aside section img {
+    width: 20%; /* Set width to 20% of container */
+    height: auto; /* Maintain aspect ratio */
 }
 
-.preco-total {
-    text-align: right;
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-top: 1rem;
+/* Subheadings in aside articles */
+aside section article h4 {
+    margin-bottom: 20px; /* Add space below subheading */
+    margin-top: 10px; /* Add space above subheading */
+    margin-bottom: 30px; /* Additional space below */
 }
 
+/* Buttons in aside section articles */
+aside section article button {
+    position: absolute; /* Position relative to article */
+    bottom: 20px; /* Place at bottom of article */
+    padding: 5px; /* Add internal spacing */
+    border-radius: 10px; /* Round the corners */
+}
+
+/* Paragraph in aside section */
+aside p {
+    margin-top: 20px; /* Add space above paragraph */
+    text-align: center; /* Center align text */
+    text-decoration: solid; /* Ensure solid text decoration */
+}
+
+/* Footer styling */
 footer {
-    background-color: #f0f0f0;
-    padding: 1rem;
-    text-align: center;
-    margin-top: auto;
+    grid-area: footer_area; /* Assign to footer grid area */
+    padding: 30px; /* Add internal spacing */
+}
+
+/* Footer paragraph */
+footer p {
+    text-align: center; /* Center align text */
+}
+
+/* Body grid layout */
+body {
+    display: grid; /* Use grid layout */
+    grid-template-areas: /* Define grid areas */
+        'header_area'
+        'main_area'
+        'aside_area'
+        'footer_area';
+    max-width: 100vw; /* Ensure full viewport width */
 }

@@ -1,107 +1,14 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-
-        header {
-            background-color: #800080;
-            padding: 1rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        header h1 {
-            color: white;
-            font-size: 2rem;
-        }
-
-        nav {
-            display: flex;
-            gap: 2rem;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.1rem;
-        }
-
-        main {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-
-        h2 {
-            text-align: center;
-            margin-bottom: 2rem;
-        }
-
-        .products-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .product-card {
-            background-color: #f9f9f9;
-            padding: 1.5rem;
-            border-radius: 8px;
-            text-align: center;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-
-        .product-card img {
-            max-width: 200px;
-            height: auto;
-            margin-bottom: 1rem;
-        }
-
-        .product-card h3 {
-            margin-bottom: 0.5rem;
-            font-size: 1.2rem;
-        }
-
-        .product-price {
-            color: #333;
-            font-weight: bold;
-            margin: 1rem 0;
-        }
-
-        .product-description {
-            font-size: 0.9rem;
-            color: #666;
-            margin-bottom: 1rem;
-            text-align: left;
-        }
-
-        .add-to-cart {
-            background-color: #f0f0f0;
-            border: none;
-            padding: 0.5rem 1rem;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        .add-to-cart:hover {
-            background-color: #e0e0e0;
-        }
-    </style>
+    <title>Loja </title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Loja</h1>
+        <h1>Lojinha</h1>
         <nav>
             <a href="#produtos">Produtos</a>
             <a href="#cesto">Cesto</a>
@@ -110,38 +17,26 @@
 
     <main>
         <h2>Selecione os seus Produtos</h2>
-        
-        <div class="products-grid">
-            <div class="product-card">
-                <img src="/api/placeholder/200/200" alt="Mens Casual Premium Slim Fit T-Shirts">
-                <h3>Mens Casual Premium Slim Fit T-Shirts</h3>
-                <p class="product-price">Custo total: 22.3 €</p>
-                <p class="product-description">
-                    Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing.
-                </p>
-                <button class="add-to-cart">+ Adicionar ao Cesto</button>
-            </div>
-
-            <div class="product-card">
-                <img src="/api/placeholder/200/200" alt="Mens Cotton Jacket">
-                <h3>Mens Cotton Jacket</h3>
-                <p class="product-price">Custo total: 55.99 €</p>
-                <p class="product-description">
-                    Great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors.
-                </p>
-                <button class="add-to-cart">+ Adicionar ao Cesto</button>
-            </div>
-
-            <div class="product-card">
-                <img src="/api/placeholder/200/200" alt="Mens Casual Slim Fit">
-                <h3>Mens Casual Slim Fit</h3>
-                <p class="product-price">Custo total: 15.99 €</p>
-                <p class="product-description">
-                    The color could be slightly different between on the screen and in practice. Please note that body builds vary by person, therefore, detailed size information should be reviewed below on the product description.
-                </p>
-                <button class="add-to-cart">+ Adicionar ao Cesto</button>
-            </div>
-        </div>
+        <section id="produtos">                  
+                 
+        </section>
     </main>
+
+    <aside>
+        <h2>Produtos Selecionados:</h2>
+        <section id="cesto">
+
+        </section>
+        <p>Custo Total: <span id="custoTotal"></span></p>
+
+    </aside>
+    <footer>
+        <p>2024</p>
+
+    </footer>
+   
+    <script src="produtos.js"></script>
+    <script src="main.js"></script>
+    
 </body>
 </html>
