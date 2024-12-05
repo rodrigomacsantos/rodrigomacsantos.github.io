@@ -162,6 +162,7 @@ function pesquisar(){
     pesquisarProduto.oninput = function(){
         // Filtra produtos cujo título inclui o texto digitado.
         carregarProdutos(produtos.filter(produto => produto.title.toLowerCase().includes(this.value.toLowerCase())));
+        carregarProdutos(produtos.filter(produto => produto.description.toLowerCase().includes(this.value.toLowerCase())));
     };
 }
 
