@@ -216,6 +216,13 @@ function comprar(){
                 let pReferencia = document.getElementById("referencia");
                 pReferencia.textContent = "Referência de pagamento: " + data.reference;
             }
+
+            if (counter===1){
+                let newP = document.createElement('p');
+                newP.textContent = "Address: " + data.address;
+                newP.id = "address";
+                section.append(newP);
+            }
             counter++;
         });
     };
