@@ -1,0 +1,210 @@
+* {
+    font-family: Arial, Helvetica, sans-serif; /* Define a fonte padrão para todo o documento */
+    box-sizing: border-box; /* Inclui bordas e padding no tamanho total do elemento */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimento padrão */
+}
+
+header {
+    grid-area: header_area; /* Define a área do grid para o cabeçalho */
+    z-index: 10; /* Garante que o cabeçalho fique sobre outros elementos */
+    position: sticky; /* Mantém o cabeçalho fixo no topo ao rolar a página */
+    top: 0; /* Define a posição fixa no topo */
+    display: flex; /* Usa layout flexível para organizar elementos */
+    flex-direction: row; /* Organiza os elementos em uma linha */
+    justify-content: space-between; /* Espaça uniformemente os itens no cabeçalho */
+    background-color: #1e3a5f; /* Define a cor de fundo do cabeçalho */
+    padding: 20px; /* Adiciona preenchimento ao redor do cabeçalho */
+    align-items: center; /* Alinha verticalmente os itens no centro */
+}
+
+header h1 {
+    color: white; /* Define a cor do texto como branco */
+}
+
+header a {
+    text-decoration: none; /* Remove sublinhado dos links */
+    color: white; /* Define a cor do texto dos links como branco */
+    margin: 5px; /* Adiciona margem ao redor dos links */
+}
+
+main {
+    grid-area: main_area; /* Define a área do grid para o conteúdo principal */
+    background-color: #e0f2ff; /* Define a cor de fundo do conteúdo principal */
+    padding: 30px; /* Adiciona preenchimento ao conteúdo principal */
+}
+
+main h2 {
+    text-align: center; /* Centraliza o texto do título principal */
+    margin-bottom: 20px; /* Adiciona margem inferior ao título */
+}
+
+aside h2 {
+    text-align: center; /* Centraliza o texto do título lateral */
+    margin-bottom: 20px; /* Adiciona margem inferior ao título */
+    margin-top: 20px; /* Adiciona margem superior ao título */
+    color: white; /* Define a cor do texto como branco */
+}
+
+#produtos {
+    display: grid; /* Usa grid layout para os produtos */
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Divide a seção em 4 colunas iguais */
+}
+
+#produtos article {
+    position: relative; /* Define a posição relativa para uso de elementos absolutos internos */
+    z-index: 5; /* Define a ordem de sobreposição dos artigos */
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+    display: flex; /* Usa layout flexível para os artigos */
+    flex-direction: column; /* Organiza os elementos dos artigos em uma coluna */
+    align-items: center; /* Alinha os elementos ao centro horizontalmente */
+    margin: 10px; /* Adiciona margem ao redor dos artigos */
+    background-color: white; /* Define a cor de fundo dos artigos */
+    padding: 20px; /* Adiciona preenchimento ao redor dos artigos */
+}
+
+#produtos article h3 {
+    margin-bottom: 10px; /* Adiciona margem inferior ao título do produto */
+    text-align: center; /* Centraliza o texto do título */
+}
+
+#produtos article img {
+    width: 40%; /* Define a largura da imagem como 40% do artigo */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+#produtosarticle h4 {
+    margin-bottom: 20px; /* Adiciona margem inferior ao preço */
+    margin-top: 10px; /* Adiciona margem superior ao preço */
+}
+
+#produtos article p {
+    font-style: italic; /* Define o estilo da descrição como itálico */
+    font-size: 15px; /* Define o tamanho da fonte da descrição */
+    margin-bottom: 50px; /* Adiciona margem inferior à descrição */
+}
+
+#produtos article button {
+    position: absolute; /* Posiciona o botão dentro do artigo */
+    bottom: 20px; /* Define a posição inferior do botão */
+    padding: 5px; /* Adiciona preenchimento ao botão */
+    border-radius: 10px; /* Adiciona bordas arredondadas ao botão */
+}
+
+aside {
+    grid-area: aside_area; /* Define a área do grid para a barra lateral */
+    background-color: #1e3a5f; /* Define a cor de fundo da barra lateral */
+    padding: 50px; /* Adiciona preenchimento à barra lateral */
+}
+
+aside section {
+    display: grid; /* Usa grid layout para os artigos da seção lateral */
+    grid-template-columns: 1fr 1fr 1fr; /* Divide a seção em 3 colunas iguais */
+}
+
+aside section article {
+    position: relative; /* Define a posição relativa para elementos internos */
+    z-index: 5; /* Define a ordem de sobreposição dos artigos */
+    border-radius: 10px; /* Adiciona bordas arredondadas aos artigos */
+    display: flex; /* Usa layout flexível para os artigos */
+    flex-direction: column; /* Organiza os elementos dos artigos em uma coluna */
+    align-items: center; /* Alinha os elementos ao centro horizontalmente */
+    margin: 10px; /* Adiciona margem ao redor dos artigos */
+    background-color: white; /* Define a cor de fundo dos artigos */
+    padding: 20px; /* Adiciona preenchimento aos artigos */
+}
+
+aside section h2 {
+    text-align: center; /* Centraliza o texto do título da seção lateral */
+    color: white; /* Define a cor do texto como branco */
+    margin-bottom: 20px; /* Adiciona margem inferior ao título */
+}
+
+aside section img {
+    width: 20%; /* Define a largura da imagem como 20% do artigo */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+aside section article h4 {
+    margin-bottom: 20px; /* Adiciona margem inferior ao preço */
+    margin-top: 10px; /* Adiciona margem superior ao preço */
+    margin-bottom: 30px; /* Adiciona margem inferior ao preço */
+}
+
+aside section article button {
+    position: absolute; /* Posiciona o botão dentro do artigo */
+    bottom: 20px; /* Define a posição inferior do botão */
+    padding: 5px; /* Adiciona preenchimento ao botão */
+    border-radius: 10px; /* Adiciona bordas arredondadas ao botão */
+}
+
+aside p {
+    margin-top: 20px; /* Adiciona margem superior ao parágrafo */
+    text-align: center; /* Centraliza o texto */
+    text-decoration: solid; /* Remove decorações adicionais */
+}
+
+footer {
+    grid-area: footer_area; /* Define a área do grid para o rodapé */
+    padding: 30px; /* Adiciona preenchimento ao rodapé */
+    background-color: #1e3a5f; /* Define a cor de fundo do rodapé */
+}
+
+footer p {
+    text-align: center; /* Centraliza o texto do rodapé */
+    color: white; /* Define a cor do texto como branco */
+}
+
+body {
+    display: grid; /* Usa grid layout para organizar as áreas do layout */
+    grid-template-areas: /* Define as áreas do grid */
+    'header_area'
+    'main_area'
+    'aside_area'
+    'footer_area';
+    max-width: 100vw; /* Define a largura máxima do corpo */
+}
+
+#submenu {
+    background-color: white; /* Define a cor de fundo do submenu */
+    border-radius: 10px; /* Adiciona bordas arredondadas ao submenu */
+    padding: 20px; /* Adiciona preenchimento ao submenu */
+    margin: 10px; /* Adiciona margem ao submenu */
+    display: flex; /* Usa layout flexível para organizar os elementos */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+#submenu select {
+    margin-right: 20px; /* Adiciona margem à direita do seletor */
+    margin-left: 5px; /* Adiciona margem à esquerda do seletor */
+}
+
+#submenu input {
+    margin-left: 5px; /* Adiciona margem à esquerda do campo de entrada */
+}
+
+#checkout {
+    margin-top: 10px; /* Adiciona margem superior à seção de checkout */
+    color: black; /* Define a cor do texto como preto */
+    display: flex; /* Usa layout flexível para organizar os elementos */
+    flex-direction: column; /* Organiza os elementos em uma coluna */
+    align-items: center; /* Alinha os elementos ao centro horizontalmente */
+    background-color: #e0f2ff; /* Define a cor de fundo da seção de checkout */
+    border-radius: 20px; /* Adiciona bordas arredondadas à seção de checkout */
+    padding: 20px; /* Adiciona preenchimento à seção de checkout */
+}
+
+#checkout p {
+    text-align: center; /* Centraliza o texto dos parágrafos */
+}
+
+#botao {
+    width: 75px; /* Define a largura do botão */
+    padding: 2px; /* Adiciona preenchimento ao botão */
+    border-radius: 5px; /* Adiciona bordas arredondadas ao botão */
+    margin: 20px; /* Adiciona margem ao redor do botão */
+}
+
+#checkout h3 {
+    text-align: center; /* Centraliza o texto do título do checkout */
+}
